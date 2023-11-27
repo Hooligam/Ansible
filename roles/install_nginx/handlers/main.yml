@@ -1,0 +1,7 @@
+---
+# handlers file for install_nginx
+- name: Iniciar o servidor Nginx
+  systemd:
+   name: nginx
+   state: started
+   enable: yes

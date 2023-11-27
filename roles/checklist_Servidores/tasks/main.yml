@@ -1,0 +1,24 @@
+---
+# tasks file for atualizacao_pacotes
+
+- name: Atualizar sistema e pacotes em sistemas Ubuntu
+  become: yes
+  apt:
+    upgrade: dist
+    update_cache: yes
+  when: ansible_distribution == 'Ubunto'
+
+- name: Atualizar sistema e pacotes em sistemas Debian
+  become: yes
+  apt:
+    upgrade: dist
+    update_cache: yes
+  when: ansible_distribution == 'Debian'
+
+
+- name: Atualizar sistema e pacotes em sistemas CentOS
+  become: yes
+  yum:
+    name: '*'
+    state: latest
+  when: ansible_distribution == 'CentOS'

@@ -1,0 +1,28 @@
+---
+- hosts: all
+  pre_tasks:
+    - name: Debug
+      debug:
+        msg: "Atualizando o servidor e instalando pacotes e dependências necessárias"
+
+  roles:
+    - checklist_Servidores
+
+  post_tasks:
+    - name: Debug
+      debug:
+        msg: "Servidor atualizado e todas dependências instaladas"
+
+- hosts: all
+  pre_tasks:
+    - name: Debug
+      debug:
+        msg: "instalando nginx e realizando deploy do site"
+
+  roles:
+    - install_nginx
+
+  post_tasks:
+    - name: Debug
+      debug:
+        msg: "Site em producao"

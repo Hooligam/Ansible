@@ -1,0 +1,8 @@
+[Ubunto]
+Zoro ansible_host=172.233.144.172
+
+[Debian]
+Luffy ansible_host=172.233.144.161
+
+[CentOS]
+Sanji ansible_host=172.233.142.218

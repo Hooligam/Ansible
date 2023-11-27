@@ -1,0 +1,30 @@
+---
+# tasks file for install_nginx
+- name: Instalando nginx - Ubunto
+  apt: 
+   name: nginx
+   state: present
+  when: ansible_distribution == 'Ubunto'
+  
+- name: Instalando nginx - Debian
+  apt: 
+   name: nginx
+   state: present
+  when: ansible_distribution == 'Debian'
+
+- name: Instalando nginx - CentOS
+  yum: 
+   name: nginx
+   state: present
+  when: ansible_distribution == 'CentOS'
+
+- name: Nginx Config
+  copy:
+    src: default.conf
+    dest: /etc/nginx/conf.d/
+
+
+- name: Deploy do site
+  copy:
+    src: index.html
+    dest: /var/www/html/

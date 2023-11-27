@@ -1,0 +1,8 @@
+---
+# vars file for atualizacao_pacotes
+pacotes:
+    - net-tools
+    - vim
+    - telnet
+    - nmap
+    - tree
