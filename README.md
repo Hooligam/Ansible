@@ -1,5 +1,5 @@
 # Gerenciando, automatizando, implando e configurando servidores
-![Ansible](https://e7.pngegg.com/pngimages/801/466/png-clipart-ansible-devops-puppet-chef-configuration-management-becoming-a-chef-angle-text-thumbnail.png)
+![Ansible](https://datascientest.com/en/wp-content/uploads/sites/9/2023/11/ansible.webp)
 
 **Objetivo**:
 O projeto visa simplificar e automatizar o gerenciamento de três servidores distintos, executando os sistemas operacionais Ubuntu, Debian e CentOS. Utilizando a poderosa ferramenta de automação Ansible, nosso objetivo é instalar pacotes essenciais, configurar o servidor web Nginx e realizar o deploy de um site de forma eficiente e consistente.
