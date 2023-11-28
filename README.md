@@ -1,4 +1,4 @@
-# Gerenciando, automatizando, implando e configurando servidores
+# Automatizando a Administração e Configuração de Servidores com Ansible
 ![Ansible](https://datascientest.com/en/wp-content/uploads/sites/9/2023/11/ansible.webp)
 
 **Objetivo**:
